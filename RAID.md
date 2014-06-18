@@ -29,7 +29,7 @@ http://www.eecs.berkeley.edu/Pubs/TechRpts/1987/CSD-87-391.pdf
     * Next prob of failure = MTTR / (MTTF / # of remaining disks - 1)  
   
 ###RAID types
-    ####Types of disks used   
+####Types of disks used   
     * Data disk : G  
     * Check disk/parity disk : C  
     * RAID0 (JBOD : Just Bunch of Disk) C = 0  
