@@ -109,11 +109,11 @@ depending on the physical medium used
 TCP   
 1.Establish connection: 3-way handshake  
 2.Data transmission  
-  *Byte-stream service  
-  *Reliable (retransmission with timer)  
-  *In-order delivery (reorder packets if necessary)  
-  *Support flow control (fast sender vs slow receiver)  
-  *Full-duplex (data transferred both ways)  
+* Byte-stream service  
+* Reliable (retransmission with timer)  
+* In-order delivery (reorder packets if necessary)  
+* Support flow control (fast sender vs slow receiver)  
+* Full-duplex (data transferred both ways)  
 3.Close connection  
   
 connect : service  
@@ -132,12 +132,12 @@ At a time of connection establishment
 Allowing each side to know the other exists  
   
 Negotiation of optional parameters   
-#Max segment size  
-#Initial Sequence Numbers (ISN)  
+* Max segment size  
+* Initial Sequence Numbers (ISN)  
   
 Triggering allocation of transport entity resources  
-#Buffer  
-#Timers (if any)  
+* Buffer  
+* Timers (if any)  
   
 Problems  
 HAlf-open Connection  
