@@ -46,5 +46,5 @@ http://www.eecs.berkeley.edu/Pubs/TechRpts/1987/CSD-87-391.pdf
 https://raid.wiki.kernel.org/index.php/RAID_setup#Linear_mode  
 
 ###Used terms and notations
-    * MTTF = Mean Time To Fail  
-    * MTTR = Mean Time To Repair  
+* MTTF = Mean Time To Fail  
+* MTTR = Mean Time To Repair  
