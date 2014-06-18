@@ -5,7 +5,7 @@ From Leetcode
 For instance, with n=7 and k=3, the array {a, b, c, d, e, f, g} is rotated to {e, f, g, a, b, c, d}.”
 
 Basic idea :
-Imagine roulette wheel and one started from a point called origin eventually 
+Imagine a roulette wheel and one started from a point called origin eventually 
 come to the same origin by traversing constant amount of distance say ‘K’.
 assume array is close bound data structure. (in c you can access any array location and can get garbage value)
     
