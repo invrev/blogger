@@ -1,5 +1,5 @@
-A case study for Redundant Arrays of Inexpensive Disk (RAID)
-http://www.eecs.berkeley.edu/Pubs/TechRpts/1987/CSD-87-391.pdf
+A case study for Redundant Arrays of Inexpensive Disk (RAID)  
+http://www.eecs.berkeley.edu/Pubs/TechRpts/1987/CSD-87-391.pdf  
 
 
 Performance of the system increased with improvement in the performance of
@@ -7,12 +7,12 @@ Performance of the system increased with improvement in the performance of
 2.Memory
 3.I/O
 
-I/O system is evaluated based on the following attributes
-1.performance
-    At abstract level 2 types of systems need to be considered to measure the performance
-    1.TPS (Random access)
-        Read,Write and modify (Search)
-    2.SuperComputer applications (Sequential access)
+I/O system is evaluated based on the following attributes  
+1.performance  
+    At abstract level 2 types of systems need to be considered to measure the performance  
+    1.TPS (Random access)  
+        Read,Write and modify (Search)  
+    2.SuperComputer applications (Sequential access)  
         Read and write 
 2.Power consumption
 3.Scalability
