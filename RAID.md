@@ -30,21 +30,21 @@ http://www.eecs.berkeley.edu/Pubs/TechRpts/1987/CSD-87-391.pdf
   
 ###RAID types
 ####Types of disks used   
-    * Data disk : G  
-    * Check disk/parity disk : C  
-    * RAID0 (JBOD : Just Bunch of Disk) C = 0  
-    * RAID1 : Mirrored Disk (G=C= 1)  
+    * Data disk  =  G  
+    * Check disk/parity disk  =  C  
+    * RAID0 (JBOD  =  Just Bunch of Disk) C = 0  
+    * RAID1  =  Mirrored Disk (G=C= 1)  
       Double the storage cost/Use only 50% of the storage space  
-    * RAID2 : Hamming code for error correction  
+    * RAID2  =  Hamming code for error correction  
       Error correction requires more disk than error detection  
       A parity disk can detect the single error  
-    * RAID3 : Single check disk/Parity disk per group  
-    * RAID4 : Indepnedent reads and writes  
-    * RAID5 : Spread data + parity over all disks (no single check disk)  
+    * RAID3  =  Single check disk/Parity disk per group  
+    * RAID4  =  Indepnedent reads and writes  
+    * RAID5  =  Spread data + parity over all disks (no single check disk)  
 
 ###RAID can be implemented as application using logical sectors and disk  
 https://raid.wiki.kernel.org/index.php/RAID_setup#Linear_mode  
 
 ###Used terms and notations
-    * MTTF : Mean Time To Fail  
-    * MTTR : Mean Time To Repair  
+    * MTTF = Mean Time To Fail  
+    * MTTR = Mean Time To Repair  
