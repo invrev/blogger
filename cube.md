@@ -1,4 +1,6 @@
-###Implementing Data Cubes Efficiently  http://web.eecs.umich.edu/~jag/eecs584/papers/implementing_data_cube.pdf
+###Implementing Data Cubes Efficiently  
+
+http://web.eecs.umich.edu/~jag/eecs584/papers/implementing_data_cube.pdf
 
 ####Idea : 
 * Select set of relations that is used to materialize view (precompute the relation result)
