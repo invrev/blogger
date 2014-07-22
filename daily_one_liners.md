@@ -1,9 +1,7 @@
 ##File processing
-* Show top # lines
-
+Show top # lines
 ####head -# <file_name>
-
-* Show bottom n lines from file_name
+Show bottom n lines from file_name
 
 ####tail -n # <file_name>
 
