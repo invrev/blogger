@@ -19,22 +19,22 @@ Expression tree,Huffman tree,Decision tree,Heap data structure
 Encoding and decoding the string
 All characters are not born equal.
 However each character occupies the 1 byte (8 bit) when it comes to storage.
-*Encoding
+* Encoding
     Encode the string
     for e.g. 
              b(e) : # of bits req. to encode the character b
              b(j) : # of bits req. to encode the character j
              f : frquencey vector 
     b(e)*f(e) + b(j)*f(j) < 8*f(e) + 8*f(j)
-*Decoding
+* Decoding
     Decode the string
     Use prefix-free code
-*Any tree can be encoded as the binary tree.
+* Any tree can be encoded as the binary tree.
 
 
 Leaves,internal node,root,Ancenstor,Descendants
 
-*Ancenstor
+* Ancenstor
 
 
 
