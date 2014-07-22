@@ -1,6 +1,7 @@
 A beautiful data structure where insertion and deletion done at a one end.
 
-Practical uses 
+Practical usages 
+
 1. Directory path representation in UNIX
     for eg. put the path inside the stack 
     if found ../ remove the top if found // don't to anything
