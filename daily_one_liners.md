@@ -79,7 +79,7 @@
 #### To list versions
 * `rpm -qa | grep <executable_file>`
 * `rpm -qa | grep libreoffice`
-* `rpm -qf `which <executable_file>``
+* `rpm -qf ``which <executable_file>```
 
 ###TODOS RPM
 Write the conservative path in spec file to avoid conflict in-short try to avoid
