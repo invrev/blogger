@@ -5,13 +5,11 @@
 ####Show bottom n lines from file_name
 * tail -n # <file_name>
 
-* Given file split it with delim and extract columns
+####Given file split it with delim and extract columns
+* cut -d '<delim>' -f1,2
 
-####cut -d '<delim>' -f1,2
-
-* Get the dump from url
-
-####lynx -dump <url>
+####Get the dump from url
+* lynx -dump <url>
 
 * Find the lines excluding pattern
 ####grep -v <pattern>
