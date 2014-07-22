@@ -1,12 +1,20 @@
 ##File processing
 * Show top # lines
+
 ####head -# <file_name>
+
 * Show bottom n lines from file_name
+
 ####tail -n # <file_name>
+
 * Given file split it with delim and extract columns
+
 ####cut -d '<delim>' -f1,2
+
 * Get the dump from url
+
 ####lynx -dump <url>
+
 * Find the lines excluding pattern
 ####grep -v <pattern>
 * Count # of delims "|" from the file
