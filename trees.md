@@ -36,9 +36,14 @@ Leaves,internal node,root,Ancenstor,Descendants
 
 * Ancenstor
 
+* Tree concept
 
+1. In binary tree preorder+inorder or postorder+inorder uniquely identifies the single binary tree 
+This can be useful when we want to 
+a. Transfer the binary tree from one machine to other machine
+b. Detect wheather one tree is subtree of the other tree. (by checking the sub array)
 
-
+* Tree questions with concept
 1. Width of tree
 2. Span of tree
 3. Tree diameter(LAN packet transfer worst case scenario)
@@ -53,3 +58,5 @@ Use of heap like data stucture
 11. Reconstruction of binary trees (Given inorder + (preorder/postorder) traversal construct the binary tree.)
 12. Concept of horizontal distance (Compute the vertical sum of binary tree)
 13. # of trees with given inorder sequence (Catalan #)
+
+*

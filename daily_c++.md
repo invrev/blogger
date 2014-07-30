@@ -28,4 +28,34 @@ to use the string of 500MB in the program and system have only 600MB of space.
 * get the substring
 substr(pos,length)
 
+* sort the string
+    in-place sorting
+    eg. string single_str
+    `sort(single_str.begin(),single_str.end());`
+
+* map in c++
+
+* declaration
+    `map<string,string> str_map;`
+    
+* most used interfaces 
+    find : to check wheather element is exist or not
+    
+    `if (str_map.find(element_key) == str_map.end() ) {
+        //element_key not found    
+    } else {
+        str_map[element_key] = "found"; add the element
+    }`
+
+* Use of iterator
+
+* appending one vector to other
+    
+    `first_vec.insert(first_vec.end(), second_vec.begin(), second_vec.end());`
+    
+#### Get the symbol table for the debugging
+    `g++ -g <file_name.cpp>`
+    
+
+
 

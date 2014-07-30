@@ -25,6 +25,9 @@
 * perl -pi -w -e 's/SEARCH_FOR/REPLACE_WITH/g;' *.txt
 * perl -pi -w -e 's/stupid/awesome/g;' ~/Desktop/*.txt
 
+#### Remove the spaces in the file
+*   sed -i '/^$/d' file_name.ext
+
 #### Replace dates (2010-12-31,2011-12-31,2012-12-31) to 4 from date_file in place 
 * perl -p -i -e 's/201[0-2]-12-31/4/g' date_file (in-place)
 * cat date_file | perl –p –e 's/201[0-2]-12-31/4/g;' > new_date_file
@@ -84,3 +87,11 @@
 ###TODOS RPM
 Write the conservative path in spec file to avoid conflict in-short try to avoid
 the use of regex in the spec file
+
+####Kill all ssh sessions
+
+* kill `pgrep ssh`
+
+#### Quick Vim
+    * count # of chars in visual mode
+        `eg. <,>s/,//gn  (count # of , in visual mode)`
