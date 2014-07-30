@@ -6,8 +6,7 @@ http://google-styleguide.googlecode.com/svn/trunk/
 
 #### 
     * difference between pass by value and pass by reference
-    * Motivation to use the pass by reference some one wants 
-to use the string of 500MB in the program and system have only 600MB of space.
+    * Motivation to use the pass by reference some one wants to use the string of 500MB in the program and system have only 600MB of space.
 
 ### use vector
 
