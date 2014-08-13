@@ -34,7 +34,10 @@
 
 ##System utils
 
-#### find location of executable
+#### find location of application
+* which <name_of_executable>
+
+#### find location of file
 * which <name_of_executable>
 
 ##Network utils
@@ -45,6 +48,18 @@
 #### Monitor network traffic w/o SSH,UDP,ARP not to and from host x.x.x,x and dump the result in "cap.txt" 
 * tcpdump -i eth0 -W cap.txt port not ssh and not udp and not arp and host not x.x.x,x
 * tcpdump -i eth0 -w cap.pcap port not ssh and not udp and not arp and host not x.x.x,x
+
+#### DNS lookup
+    * `dig google.com +short` 
+    * `dig google.com +multiline`  (VERBOSE)
+    * `dig google.com +nssearch` (get SOA record)
+    * `dig @ns1.google.com . axfr google.com +onesoa > google.com-zone`
+    * `dig google.com +trace` (trace the delegation tree)
+
+#### Listing open n/w interfaces
+    * `lsof -i -n` (With IP)
+    * `lsof -i ` (W/O IP)
+
 
 ###Comman utils
 #### Print all the directories (including hidden)
@@ -95,3 +110,24 @@ the use of regex in the spec file
 #### Quick Vim
     * count # of chars in visual mode
         `eg. <,>s/,//gn  (count # of , in visual mode)`
+
+#### Process monitor
+  
+    * Detail process monitor
+        `ps -ef`
+    
+    * Detail process monitor with username
+        `ps -uef`
+
+    * Process with all threads
+        `ps -eLf`
+
+    * Process from all users 
+        `ps aux`
+    
+    * Process with selective attribute 
+        `Display pid,ppid,cpu%,mem % and command
+         eg.  ps axo pid,ppid,pcpu,pmem,comm` 
+
+
+    

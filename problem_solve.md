@@ -28,3 +28,10 @@ http://web.stanford.edu/~blp/papers/libavl.pdf
         2.
         
     3.Analysis pattern
+
+
+To solve problems
+    1. Understand 
+    2. Realization
+    3. Clean algorithm
+    4. Implementation

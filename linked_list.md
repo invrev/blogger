@@ -15,6 +15,10 @@ Given a.LL W/O cycle.
 7. Check wheather linked list is palindrome or not.Assume linked list is mutable.
 8. Find kth element from the last.
 9. Delete kth element from the last.
+
+10.print nodes a kth level
+
+
 10. Given kth node delete (K-1)node from the linked list.
 Find median from the sorted LL and sorted circular LL.Given input as address of any node.
 circular ll : tail->next = head
@@ -23,4 +27,28 @@ Posting list  : list with 3 fields
                 (data,jump,next)
 jump : points to any node in the LL.
 next : points to next node.
+
+
+
+Things to note in linked list.
+
+Each allocated node is present in the heap with unique address.
+Stack variables are copied by value there values remains the same 
+till the lifetime of the program.
+They remain unchanged untill the values inside the heap are intact
+
+1.  pass by reference
+2.  pass by value
+3.  Local reference  (eg. remove_nth_node.cpp)
+
+Basic Idea : 
+    1. Use of derefernce operator (*) when update the value
+        
+    2. Use of (&) to locate the element in the HEAP.
+
+
+
+
+
+
 

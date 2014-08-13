@@ -26,8 +26,19 @@ http://google-styleguide.googlecode.com/svn/trunk/
 
 ### use string (NOTE : unlike JAVA,strings are immutable)
 
+* convert number to string
+`use sstream
+#include <sstream> 
+ostringstream convert;   
+convert << Number; 
+string result = convert.str();`
+
 * get the substring
-substr(pos,length)
+
+`
+eg. string input_str;
+input_str.substr(pos,length)
+`
 
 * sort the string
     in-place sorting
@@ -53,10 +64,61 @@ substr(pos,length)
 * appending one vector to other
     
     `first_vec.insert(first_vec.end(), second_vec.begin(), second_vec.end());`
+
+* increasing the size of vector by n .
+    `vecObj.resize(n)`
+
     
 #### Get the symbol table for the debugging
     `g++ -g <file_name.cpp>`
+
+#### Difference in logical operator (&&) and BitWise operator (&)
+
+#### pointer arena
+       
+    in c++,Reference is an alias of a object.
+    in c,reference is an memory location or 
+    Though eventually in both cases it is an memory location.
+    
+    Difference between reference and pointer 
+    Terminologies 
+    1. Pointee : 
+         A value
+    2. Reference :
+         A memory address 
+         Use & operator to create the reference.
+    3. Pointer  :
+         a memory location that stores the address/reference of another variable/memory location.
+    4. Dreferencing :
+         operation that retrives the pointee from the given pointer
+    5. Shallow and Deep copy
+    
+    6. Bad pointer
+        uninitialized pointer/pointer with a garbage value.
+
+    
+    1. Rule of three (not from c++)
+         1. Pointer must be allocated  
+             eg. int *a = 0 or struct node *head = (struct node *) malloc (sizeof(struct node))
+         2. Pointee must be allocated
+            eg. int b = 10;
+         3. A pointer must be assigned to point to pointee
+            eg . a = &b;
+
     
 
+##### Reference vs. pointers: 
 
+`int& a = b;
+int* a = &b;`
+*  References are like pointers, except:
+*  Must always be initialized where declared
+*  Cannot be reassigned
+*  Use . instead of -> to access fields and methods
+*  Never need to use * to dereference, compiler will “do the right thing”
+*  Cannot take address of reference variable, you get the address of the referenced object
+
+#### constructor in the struct 
+    Always values in the bracket are for assignement 
+    `eg. TreeNode(int x) : val(x), left(NULL), right(NULL) {} `
 
