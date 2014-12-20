@@ -25,6 +25,20 @@
 * perl -pi -w -e 's/SEARCH_FOR/REPLACE_WITH/g;' *.txt
 * perl -pi -w -e 's/stupid/awesome/g;' ~/Desktop/*.txt
 
+#### Note the diffrence between character class and the grouping 
+* Example of grouping
+* perl -pi -w -e 's/((\\)+")/"/g'
+
+* input : "hi\\\\","hello\" 
+* output : "hi","hello" 
+
+* Example of character class 
+* perl -pi -w -e 's/[(\\)+"]/"/g'
+
+
+* input : "hi\\\\","hello\" 
+* output : "hi""""","hello"" 
+
 #### Remove the spaces in the file
 *   sed -i '/^$/d' file_name.ext
 
@@ -129,5 +143,28 @@ the use of regex in the spec file
         `Display pid,ppid,cpu%,mem % and command
          eg.  ps axo pid,ppid,pcpu,pmem,comm` 
 
+#### Git daily
+   
+    * Note : HEAD is an alias for the commit object that is sync with the remote repo.
 
+    * Show only commit hash 
+    `git log --pretty=oneline`
     
+    * Show files in the git
+    `git log --name-only`
+    
+    * Get diff in the file list between 2 commit obj (HEAD,9e2fa22bc7b5b2543)
+    `git diff 9e2fa22bc7b5b2543 HEAD --stat | grep -i fork`
+
+    * Get diff in the file content between 2 commit obj (HEAD,9e2fa22bc7b5b2543)
+    `git diff HEAD 9e2fa22bc7b5b2543 -- current_dir/file_name.cpp`
+    
+    
+### selected taring
+    tar all the directories with config.xml file job
+    tar -cf job.tar $( find . -name "config.xml" )
+
+#### MYSQL fast delete 
+
+delete from schema_name.table_name where <condition with non indexd column> order by <indexed column>
+

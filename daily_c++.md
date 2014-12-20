@@ -13,6 +13,20 @@ http://google-styleguide.googlecode.com/svn/trunk/
 * copy an array to a vector
  `vector<int> input_vec (arr,arr + sizeof(arr)/sizeof(arr[0]));`
 
+* create 2-d vector
+`declare 2-d vector and init 2-d
+
+    vector< vector <int> > t_d_vec (m,vector <int> (n));
+`
+
+`declare 2-d vector and init 1-d vector
+
+    vector< vector <int> > t_d_vec (m);
+    for (int i=0;i<m;i--) {
+        t_d_vec [i].resize(n) ;
+    }
+`
+
 ### use stack 
     `(push,top,pop)`
 
@@ -122,3 +136,10 @@ int* a = &b;`
     Always values in the bracket are for assignement 
     `eg. TreeNode(int x) : val(x), left(NULL), right(NULL) {} `
 
+
+
+### pointer sharing and cleaning
+string * a = new string; // this allocates space to store a string, and a is pointing to it
+string * b = a; // b to the same address as a does
+delete b; // free up the space that both a and b were pointing to
+delete a; // this will be an error, because the space that a was pointing to is already free
